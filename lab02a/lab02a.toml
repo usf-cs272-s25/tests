@@ -6,4 +6,22 @@ build = "go"
 name = "TestExtract"
 input = ['go', 'test', '-run', '$name', '-json']
 expected = "pass"
-rubric = 100
+rubric = 10
+
+[[tests]]
+name = "TestCleanHref"
+input = ['go', 'test', '-run', '$name', '-json']
+expected = "pass"
+rubric = 10
+
+[[tests]]
+name = "TestDownload"
+input = ['go', 'test', '-run', '$name', '-json']
+expected = "pass"
+rubric = 40
+
+[[tests]]
+name = "TestCrawl"
+input = ['go', 'test', '-run', '$name', '-json']
+expected = "pass"
+rubric = 40
