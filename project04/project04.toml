@@ -1,0 +1,10 @@
+[project]
+due_date = "2025-03-04 23:59:59 -0800"
+build = "go"
+timeout = 7200
+
+[[tests]]
+name = "TestTfIdf"
+input = ['go', 'test', '-run', '$name', '-json']
+expected = "pass"
+rubric = 50
