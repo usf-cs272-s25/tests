@@ -1,0 +1,15 @@
+[project]
+due_date = "2025-03-18 23:59:59 -0800"
+build = "go"
+
+[[tests]]
+name = "TestCrawlDelay"
+input = ['go', 'test', '-run', '$name', '-json']
+expected = "pass"
+rubric = 50
+
+[[tests]]
+name = "TestDisallow"
+input = ['go', 'test', '-run', '$name', '-json']
+expected = "pass"
+rubric = 50
