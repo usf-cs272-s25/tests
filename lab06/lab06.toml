@@ -1,0 +1,9 @@
+[project]
+due_date = "2025-04-02 23:59:59 -0800"
+build = "go"
+
+[[tests]]
+name = "TestVectorQuery"
+input = ['go', 'test', '-run', '$name', '-json']
+expected = "pass"
+rubric = 100
